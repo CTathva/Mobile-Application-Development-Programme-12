@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="File Application"
+ android:textAllCaps="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/rectangle"
+        android:gravity="top|left"
+        android:hint="Enter your text here..."
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:maxLines="10"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <Button
+            android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:onClick="create"
+            android:text="Create" />
+
+        <Button
+            android:id="@+id/button_load"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:onClick="load"
+            android:text="load" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:onClick="save"
+            android:text="save" />
+    </LinearLayout>
+
+</RelativeLayout>
